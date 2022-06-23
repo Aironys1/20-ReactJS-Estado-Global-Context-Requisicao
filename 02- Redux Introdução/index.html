@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[2] Aula - ReactJS - Redux Introdução</title>
+  </head>
+  <body>
+    <h1>[2] Aula - ReactJS - Redux Introdução</h1>
+    <p>Intalando o Redux e React-redux</p>
+
+    <h2>Vamos aprender</h2>
+
+    <ul>
+      <ol>
+        <div>
+          <li>Store</li>
+          <p>
+            Uma loja contém toda a árvore de estado do seu aplicativo. A única
+            maneira de alterar o estado dentro dele é despachar uma ação nele.
+            Uma loja não é uma classe. É apenas um objeto com alguns métodos
+            nele. Para criá-lo, passe sua função de redução de raiz para
+            createStore.
+          </p>
+        </div>
+        <div>
+          <li>Reducers</li>
+          <p>
+            Reducers são uma função pura no Redux. Funções puras são
+            previsíveis. Os redutores são a única maneira de alterar os estados
+            no Redux. É o único lugar onde você pode escrever lógica e cálculos.
+            A função redutora aceitará o estado anterior do aplicativo e a ação
+            que está sendo despachada, calculará o próximo estado e retornará o
+            novo objeto.
+          </p>
+          <p>Os reducers ficam dentro do Store</p>
+        </div>
+        <div>
+          <li>Actions</li>
+
+          São a única fonte de informação para a loja de acordo com a
+          documentação oficial do Redux. Ele carrega uma carga útil de
+          informações do seu aplicativo para armazenar. Conforme discutido
+          anteriormente, as ações são objetos JavaScript simples que devem ter
+          um atributo type para indicar o tipo de ação executada. Ele nos conta
+          o que aconteceu. Os tipos devem ser definidos como constantes de
+          string em seu aplicativo, conforme indicado abaixo.
+
+          <p>As Actions ficam dentro dos reducers</p>
+        </div>
+      </ol>
+    </ul>
+  </body>
+</html>
